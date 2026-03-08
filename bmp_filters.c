@@ -203,6 +203,9 @@ void inverse(RGB** arr, int H, int W, int x0, int y0, int x1, int y1) {
 }
 
 void apply_operations(RGB*** image, BitmapInfoHeader* bmif, BitmapFileHeader* bmfh, AppOptions *opts) {
+	if (opts->x1 == 0) opts->x1 = bmif->width;
+	if (opts->y1 == 0) opts->y1 = bmif->height;
+
 	if (opts->inverse_flag && opts->x0 < opts->x1 && opts->y0 < opts->y1) {
 		inverse(*image, bmif->height, bmif->width, opts->x0, opts->y0, opts->x1, opts->y1);
 	}
