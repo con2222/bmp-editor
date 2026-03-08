@@ -12,11 +12,13 @@
 * **Циклический сдвиг**: Сдвиг изображения по осям X, Y или обеим осям одновременно.
 * **Просмотр метаданных**: Вывод подробной технической информации о заголовках `BitmapFileHeader` и `BitmapInfoHeader`.
 
-## Примеры изображений
-
-[2.bmp](https://github.com/user-attachments/files/25824777/2.bmp)
-
-[out.bmp](https://github.com/user-attachments/files/25824781/out.bmp)
+### Результат работы фильтра Gray:
+| Исходное (BMP)     | После обработки (PNG скриншот)  |
+|:-------------------|:--------------------------------|
+| `original.bmp`     | ![Result](samples/original.bmp) |
+| `Grayscale`        | ![Result](samples/gray.bmp)     |
+| `Inverse`          | ![Result](samples/negative.bmp) |
+| `Cyclic Shift`     | ![Result](samples/shift.bmp)    |
 
 ## Сборка проекта
 

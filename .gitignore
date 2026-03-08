@@ -1,4 +1,4 @@
-*.bmp
+out.bmp
 *.o
 *.exe
 *.out
