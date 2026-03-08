@@ -1,0 +1,5 @@
+*.bmp
+*.o
+*.exe
+*.out
+.idea/
